@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+a{
+	text-decoration: none;
+}
+
+.surf_person{
+	width: 300px;
+	height: 60px;
+}
+
+header{
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+header{
+	text-align: center;
+}
+
+footer{
+	text-align: right;
+	margin-right: 150px;
+}
+
+footer p{
+	margin: 1px;
+	font-size: small;
+}
+
+.headerTable{
+	text-align: center;
+	width:1200px;
+}
+
+.main{
+	text-align: center;
+	min-height: 500px;
+}
+
+.headerTitle{
+	text-align: right;
+	width:720px;
+	font-size: 35px;
+}
+
+.headerButton{
+	text-align: right;
+}
+
+.headerButton button{
+	border : none;
+	border-radius: 5px;
+	box-shadow : none;
+	color : white;
+	font-size: 8px;
+	font-family : "맑은 고딕";
+	font-weight : bold;
+	padding: 6px 15px;
+}
+
+.login{
+	background-color: #2986cc;
+	
+}
+
+.join{
+	background-color: #bcbcbc;
+}
+
+.logout{
+	background-color: #cc0000;
+}
+
+.mainTable img{
+	width:300px;
+	height:200px;
+}
+
+.myPage{
+	margin-right : 10%;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	background-color: #2986cc;
+	border : none;
+	border-radius: 5px;
+	box-shadow : none;
+	color : white;
+	font-size: 8px;
+	font-family : "맑은 고딕";
+	font-weight : bold;
+	padding: 6px 15px;
+}
+
+.boardIcon img{
+	width : 20px;
+	height: 20px;
+}
+
+.freeBoard{
+	border : 1px #ccc solid;
+	text-align : center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}

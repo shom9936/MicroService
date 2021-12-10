@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="../js/jquery-3.6.0.js"></script>
+<script>
+	function go(){
+		$.ajax({ // ajax로 http request 처리 ( 비동기식으로 처리 )
+					// name : value
+			url : "goServer.jsp" , // 서버
+			// open - send 에서
+			// 
+			data : { // json
+				name : "hong", 
+				tel : "010-234-6789" } , 
+			dataType:"text" , // response
+			type: "get" , // 
+			success : function(data1){ // readstate 4 , status 200
+				alert(data1);
+			} , 
+			error : function(xhr1.status){
+				alert(xhr1.status);
+			}
+		
+		});
+	}
+</script>
+</head>
+<body>
+	<h3> jquery - ajax </h3>
+	<hr>
+	<input type="button" value="server" onclick="go()">
+</body>
+</html>

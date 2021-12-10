@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+	*{
+		font-family: "맑은 고딕";
+	}
+	
+	.login-title{
+		margin-bottom: 50px;
+	}
+	
+	.login-form{
+		position : absolute;
+		top : 40%;
+		left : 50%;
+		transform : translate(-50%, -50%);
+		text-align: center;
+	}
+	
+	.input-box {
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+	
+	.input-box > input{
+		background: transparent;
+		border : solid 1px #ccc;
+		border-radius : 5px;
+		box-shadow : 1px 1px 1px 1px gray;
+		pading : 20px 0px 5px 0px;
+		font-size: 14pt;
+		width: 100%;
+		height: 30px;
+	}
+	
+	input::placeholder{
+		color:#ccc;
+		font-size: 10pt;
+		margin-left: 10px;
+	}
+	
+	.check-id{
+		position : absolute;
+		top : 90%;
+		left: 0;
+	}
+	
+	.login-button {
+		position : absolute;
+		top : 90%;
+		right: 0;
+	}
+	
+	.check-id > input{
+		text-align: left;
+	}
+	
+	.check-id > font{
+		text-align: left;
+		color: #5b5b5b;
+	}
+	
+	.login-button > input{
+		background-color: #2986cc;
+		border : none;
+		border-radius: 5px;
+		box-shadow : none;
+		color : white;
+		font-size: 8px;
+		font-family : "맑은 고딕";
+		font-weight : bold;
+		padding: 6px 15px;
+	}
+	
+
+	
+</style>
+</head>
+<body>
+	<div class = "login-form">
+		<header class="login-title">
+			<h1> Team Fight Tactics </h1>
+		</header>
+		
+		<form>
+			<div class="input-box">
+				<input id = "id" type="text" name="id" value = "">
+	
+			</div>
+			<div class="input-box">
+				<input id="password" type="password" name="password" placeholder="&nbsp;&nbsp;비밀번호">		
+			</div>
+			<br><br>
+			<span>
+				<span class="login-button">
+					<input type="button" value = "본인 확인" onclick="checkLogin(this.form);">
+				</span>
+			</span>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.boardWriterInfo{
+		font-size: 8pt;
+		float : right;
+		padding-top: 10px;
+	}
+	
+	.boardTitle{
+		float : left;
+		font-weight: bold;
+		font-size: 15pt;
+	}
+	
+	.boardView{
+		width : 1000px;
+		text-align: center;
+	}
+	
+	.boardInfo{
+		padding-bottom: 20px;
+	}
+	
+	.boardView hr{
+		border: 0;
+    	height: 2px;
+   		background: #ccc;
+   		margin-top: 10px;
+   		margin-bottom: 10px;
+	}
+	
+	.boardContent{
+		min-height: 300px;
+		border: 1px solid #ccc;
+		background: white;
+		text-align: justify;
+	}
+	
+	.boardFile{
+		text-align: right;
+	}
+	
+	.recomment button{
+		background: transparent;
+		border: none;
+	}
+</style>
+</head>
+<body>
+	<div class="boardView">
+		<br>
+		<div class="boardInfo">
+			<div class="boardTitle"> ${boardVO.title } </div>
+			<div class="boardWriterInfo"> 작성자 : ${boardVO.name } 작성일: ${boardVO.logtime } 조회수 : ${boardVO.hit }</div>
+		</div>
+		<hr>
+		<div class="boardContent">
+			<pre>${boardVO.content }</pre>
+		</div>
+		<div class="boardFile">
+			<font> 첨부파일 </font> <a href="#">${boardVO.filename }</a>
+		</div>
+		
+		<div class="recomment" align="center">
+			<form>
+				<input type="hidden" name="seq" value="${boardVO.seq }">
+				<input type="hidden" name="id" value="${login }">
+				<input type="hidden" name="up_down">
+				<button type="button" onclick="recommendBoard(this.form);">
+					<img src="../img/good.png" width = "50px" height="50px"><br>${boardVO.recomment_cnt }
+				</button>
+				<button type="button" onclick="decommendBoard(this.form);">
+					<img src="../img/bad.png" width = "50px" height="50px"><br>${boardVO.decomment_cnt }
+				</button>
+			</form>
+		</div>
+		
+		
+		
+	</div>
+	
+		
+	
+	
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<table>
+		<tr>
+			<td colspan = "2" align="center"> ${boardVO.title }</td>
+		</tr>
+		<tr>
+			<td width = "300" align="center"> 글번호 : ${boardVO.seq }</td>
+			<td width = "300" align="center"> 작성자 : ${boardVO.name }</td>
+		</tr>
+		<tr>
+			<td width = "300" align="center"> 조회수 : ${boardVO.hit }</td>
+			<td width = "300" align="center"> 작성일: ${boardVO.logtime }</td>
+		</tr>
+		<tr>
+			<td colspan="2" height= "200"><pre>${boardVO.content }</pre></td>
+		</tr>
+		<tr>
+			<th> 첨부파일 </th>
+			<td>
+				
+					<a href="#">${boardVO.filename }</a>
+				
+				
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+  <script src="../js/jquery-3.6.0.js?ver=1"></script>
+
+</head>
+<body>
+<h1 id=hh1>어서와 jQuery는 처음이지</h1>
+<h3 id=hh2>음 그래~~~</h3>
+<h2 class=hh3>jQuery는 처음일걸</h2>
+<h1 id=hh5>열심히 배우자~~~</h1>
+
+<script>
+
+ $(function () {   //jQuery의 시작    //css() 는 jQuery에서 만든 메소드
+                                                 /* document.getElementById */
+   $('*').css('color','red');  //$('h1').css('color','red');
+   
+   $('#hh2').css('color','blue');  //document.getElementById('#hh2')
+   $('.hh3').css('color','green');
+ });   //function() 의 } 닫고 ) 닫고
+</script>
+
+
+</body>
+</html>

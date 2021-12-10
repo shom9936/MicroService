@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [30/Oct/2021:15:44:55 +0900] "GET /Surf/img/busan.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Oct/2021:15:44:55 +0900] "GET /Surf/css/basic.css?ver=2 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Oct/2021:15:44:55 +0900] "GET /Surf/img/northSea.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Oct/2021:15:44:55 +0900] "GET /Surf/img/jeju.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Oct/2021:15:44:55 +0900] "GET /Surf/img/eastSea.jpg HTTP/1.1" 304 -

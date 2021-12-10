@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MavenDB/src/main/resources/jdbctemplate.xml&apos; to &apos;jdbctemplatexml.xml&apos;" description="Rename resource &apos;jdbctemplate.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/jdbctemplate.xml" name="jdbctemplatexml.xml" stamp="1637639611779" updateReferences="true"/>
+</session>

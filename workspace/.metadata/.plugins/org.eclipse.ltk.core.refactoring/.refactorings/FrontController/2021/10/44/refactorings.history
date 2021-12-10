@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;controller.HaevaImple&apos; to &apos;HaevaImpl&apos;&#x0D;&#x0A;- Original project: &apos;FrontController&apos;&#x0D;&#x0A;- Original element: &apos;controller.HaevaImple&apos;&#x0D;&#x0A;- Renamed element: &apos;controller.HaevaImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HaevaImple&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;controller{HaevaImple.java[HaevaImple" matchStrategy="1" name="HaevaImpl" qualified="false" references="true" similarDeclarations="false" stamp="1635139396679" textual="false" version="1.0"/>
+</session>

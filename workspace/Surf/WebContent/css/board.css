@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+*{
+	font-family: "맑은 고딕";
+}
+
+.boardList{
+	width : 600px;
+	text-align: center;
+	font-size: 12pt;
+	
+}
+
+.boardList a{
+	text-decoration: none;
+}
+
+.boardList th{
+	padding: 5px;
+	color : white;
+	background-color: #bcbcbc;
+}
+
+.boardList td{
+	padding : 3px;
+}
+
+.no{
+	width : 50px;
+}
+
+.title {
+	width : 300px;
+}
+
+.id{
+	width : 100px;
+}
+
+.logtime{
+	width : 100px;
+}
+
+.hit{
+	width : 50px;
+}
+
+.boardList .write{
+	text-align: right;
+	padding : 7px;
+}
+
+.write button{
+	background-color: #2986cc;
+	border : none;
+	border-radius: 5px;
+	box-shadow : none;
+	color : white;
+	font-size: 8px;
+	font-family : "맑은 고딕";
+	font-weight : bold;
+	padding: 6px 15px;
+	
+}
+
+.boardView{
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.writerInfo{
+	text-align: right;
+	font-size: 8pt;
+}
+
+.viewContent{
+	text-align: left;
+	border : 1px solid black;
+	padding-left: 15px;
+}
+
+.viewButton{
+	
+}
+
+.commentView{
+	text-align: left;
+}
+
+.commentEach{
+	margin-bottom: 3px;
+	border-bottom : 1px solid #ccc;
+	padding : 3px;
+}
+
+.writeComment{
+	height: 55px;
+}
+
+.submitComment{
+	height: 55px;
+}
+
+.fileComment{
+	text-align: right;
+}
+
+.writeCheck button{
+	border : none;
+	border-radius: 5px;
+	box-shadow : none;
+	color : white;
+	font-size: 8px;
+	font-family : "맑은 고딕";
+	font-weight : bold;
+	padding: 6px 15px;
+	background-color: #2986cc;
+}
+
+.writeTitle, .writeContent{
+	border: 1px #bcbcbc solid;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+

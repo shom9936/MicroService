@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+	*{
+		font-family: "맑은 고딕";
+	}
+	
+	.join-title{
+		margin-bottom: 50px;
+	}
+	
+	.join-form{
+		position : absolute;
+		top : 350px;
+		left : 50%;
+		transform : translate(-50%, -50%);
+		text-align: left;
+	}
+	
+	.input-box {
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		line-height: 200%;
+	}
+	
+	.input-box > input{
+		background: transparent;
+		border : solid 1px #ccc;
+		border-radius : 5px;
+		font-size: 14pt;
+		width: 300px;
+		height: 30px;
+		margin: 0;
+	}
+	
+	.confirm-box{
+		height: 30px;
+		width: 60px;
+		position: relative;
+		top: -2px;
+		border : none;
+		border-radius: 5px;
+	}
+	
+	.input-box > label {
+		font-weight: bold;
+		font-size: 9pt;
+	}
+	
+	input::placeholder{
+		color:#ccc;
+		font-size: 10pt;
+		margin-left: 10px;
+	}
+	
+	.join-box > button{
+		background-color: #2986cc;
+		border : none;
+		border-radius: 5px;
+		box-shadow : none;
+		color : white;
+		font-size: 14px;
+		width: 310px;
+		height: 30px;
+	}
+	
+	.tel-box {
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		line-height: 200%;
+	}
+	
+	.tel-box > input, select {
+		background: transparent;
+		border : solid 1px #ccc;
+		border-radius : 5px;
+		font-size: 13pt;
+		width: 87px;
+		height: 30px;
+		margin: 0;
+	}
+	
+}
+	
+</style>
+</head>
+<body>
+	<div class = "join-form">
+		<header class="join-title">
+			<h1> Team Fight Tactics </h1>
+		</header>
+		
+		<form>
+			<div class="input-box">
+				<label>아이디</label> <br>
+				<input type="text" name="id" placeholder="&nbsp;&nbsp;아이디">
+				<button class= "confirm-box">사용</button>
+			</div>
+			<div class="input-box">
+				<label for="password"> 비밀번호 </label> <br>
+				<input id="password" type="password" name="password" placeholder="&nbsp;&nbsp;비밀번호">		
+			</div>
+			<div class="input-box">
+				<label for="rePW">비밀번호 확인</label> <br>
+				<input id="rePW" type="password" name="password" placeholder="&nbsp;&nbsp;비밀번호">		
+				<button class= "confirm-box">확인</button>
+			</div>
+			<div class="input-box">
+				<label for="name">이름</label> <br>
+				<input id = "name" type="text" name="id" placeholder="&nbsp;&nbsp;이름">
+			</div>
+			<div class="input-box">
+				<label for="email">이메일</label> <br>
+				<input id = "email" type="text" name="id" placeholder="&nbsp;&nbsp;이메일">
+			</div>
+			<div class="tel-box">
+				<label for="tel">전화번호</label> <br>
+				<select name="tel1" >
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="017">017</option>
+				</select>
+				- <input type="text" size="5" maxlength="4" name ="tel2">
+				- <input type="text" size="5" maxlength="4" name ="tel3">
+			</div>
+			<div class="join-box">
+				<br>
+				<button> 회원가입 </button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

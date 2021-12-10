@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xhr1 = null;
+	
+	function getXHR(){ // xhr 함수 ( 통신 객체 생성하기 )
+		try{ // 통신 객체 // cross browsing
+			if(window.XMLHttpRequest) // 표준형 // ie11, ff, ch
+				return new XMLHttpRequest; // xhr 통신 객체 생성
+			else if(window.ActiveXObject) // old IE?
+				return new ActiveXObject("MSXML2.XMLHTTP");
+			else
+				return new ActiveXObject("Microsoft.XMLHTTP");
+		} catch(e){
+			xhr1 = null;
+		}
+	}
+	
+	function goServer(){ // 서버로 가는 함수
+		xhr1 = getXHR(); // new XHR, xhr 객체 생성됨
+		xhr1.onreadystatechange = callback1;
+		// OnReadyStateChange라고 코딩하게 됨
+		// xhr1.open("get", "go.jsp", true); // 비동기
+		xhr1.open("get", "goParam.jsp?name=지호", true); // 비동기
+		xhr1.send(null);
+	}
+	
+	function callback1(){
+		var ta = document.getElementById("ta");
+		switch(xhr1.readyState){
+		/* case 0:
+			ta.value += "객체생성\n";
+			break;
+		case 1:
+			ta.value += "send메서드 사용전\n";
+			break;
+		case 2:
+			ta.value += "send메서드 호출\n";
+			break;
+		case 3:
+			ta.value += "아직 결과 다 안옴\n";
+			break; */
+		case 4:
+			ta.value += "결과 다 옴\n";
+			if(xhr1.status == 200){
+				ta.value += "정상으로 옴\n";
+				ta.value += xhr1.responseText+"\n";
+							 // responseXML
+			} else {
+				ta.value += "에러 발생\n"; // c: errno, perror
+										// 자바 : message, getMessage
+				ta.value += xhr1.status + "\t" + xhr1.statusText + "\n";
+							// 404					// not found
+			}
+			break;
+		}
+		
+	}
+	
+	function goClear(){
+		var ta = document.getElementById("ta");
+        ta.value = "";
+	}
+</script>
+</head>
+<body>
+	<h3> Ajax </h3>
+	<br>
+	<textarea rows="20" cols="100" id="ta"></textarea>
+	<br>
+	<input type="button" value="서버" onclick="goServer()">
+	<input type="button" value="초기화" onclick="goClear()">
+</body>
+</html>

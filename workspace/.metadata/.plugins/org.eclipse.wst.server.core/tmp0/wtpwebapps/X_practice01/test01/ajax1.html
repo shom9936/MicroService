@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	function xsss(){
+		alert('kk');
+	}
+</script>
+<script type="text/javascript">
+	function fn_process(){
+		$.ajax({
+			type : "get",
+			dataType : "text" ,
+			async : false, // false인 경우 동기식으로 처리한다.
+			url : "http://localhost:8080/X_practice01/ajaxTest1" ,
+			data : {param: "Hello jquery"} ,
+			success:function (data, textStatus) {
+				$('#message').append(data);
+				$('#testv').prop("value", "성공");
+			},
+			error:function (data, textStatus){
+				alert('에러가 발생했습니다.');
+			},
+			complete:function (data, textStatus){
+				alert('작업을 완료했습니다.');
+			}
+		});
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="전송하기" onclick="fn_process()"> 
+	<br><br>
+	<input type="text" id="testv" value="실험">
+	<div id="message"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+        var urlArray1=[
+        {key:'네이버', value:'http://www.naver.com/'},
+        {key:'레드 써니', value:'http://blog.naver.com/i2krs'}
+        ]
+        /*
+        위처럼 준비되었으면 $.each 사용하여 프로그램 작성
+        $.each(배열 또는 객체, 함수(배열또는 객체의 key, 배열또는 객체의 값))
+        $.each = for(var aa in 객체들)
+        */
+        $.each(urlArray1,function(index1,kab1){//for 반복문: for(var aa in 객체들)
+                 var str1="";
+                str1+= '<a href="'+kab1.value+'">'
+                        +'<h1>'+kab1.key+'</h1></a>'+'<br>';
+                        
+                        document.body.innerHTML +=str1;
+        });
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check(f){
+		if(f.name.value == ''){
+			alert('이름을 입력하세요');
+			f.name.focus();
+			return;
+		}
+		
+		f.submit();
+	}
+</script>
+</head>
+<body>
+<div>
+	<form action="#" method="get">
+		<div>
+			이름 <input type="text" name="name">
+		</div>
+		<div>
+			sns수신 여부를 결정하세요<br>
+			<input type="checkbox" name="sns" value="sns">
+		</div>
+		<div>
+			<br>좋아하는 음식은?<br><br>
+			<input type="checkbox" name="food" value="한식"> 한식 <br>
+			<input type="checkbox" name="food" value="양식"> 양식 <br>
+			<input type="checkbox" name="food" value="중식"> 중식 <br>
+		</div>
+		<div>	
+			<br> 취미는 <br>
+			<input type="radio" name="hobby" value="게임"> 게임 <br>
+			<input type="radio" name="hobby" value="독서"> 독서 <br>
+			<input type="radio" name="hobby" value="영화감상"> 영화감상  <br>
+		</div>
+		<div>
+			<br>구매의견<br>
+			<textarea rows="10" cols="40" placeholder="소중한 의견 여기에 넣어주세요"></textarea>
+		</div>
+		
+		<input type="button" value="가자 서버로" onclick="check(this.form)">
+		<input type="reset" value="취소">
+	</form>
+</div>
+</body>
+</html>

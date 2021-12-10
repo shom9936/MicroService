@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="../js/jquery-3.6.0.js"></script>
+</head>
+<body>
+	<br><button class="tog">크기변경</button><br>
+	<script>
+		var check = true;
+		$(function(){
+			$(".tog").click(function(aa){
+				// $("img").toggle(3000);
+				if(check){
+					$("img#coffee").attr('height', 300);
+					$("img#coffee").attr('width', 300);
+					check = false;
+				}
+				else{
+					$("img#coffee").attr('height', 500);
+					$("img#coffee").attr('width', 500);
+					check = true;
+				}
+				
+			})
+		});
+		
+		$(function(){
+			$("img#coffee").attr('height', 500);
+		})
+	</script>
+
+	<img src="../img/juice.jpg" width="200" id=juice>
+	<img src="../img/americano.jpg" width="200" id=coffee>
+</body>
+</html>

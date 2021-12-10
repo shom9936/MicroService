@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="../js/jquery-3.6.0.js"></script>
+<style type="text/css">
+	img{
+		width : 200px;
+		height: 200px;
+	}
+</style>
+</head>
+<body>
+	<h1>키즈 카페 커피숍</h1>
+	<img src="../img/americano.jpg" id =coffee>
+	<img src="../img/juice.jpg" id =juice>
+	<img src="../img/bread.jpg" id =bread>
+	
+	<script>
+		$(function(){
+			$("img").css("width", 200);
+			$("img").css("height", 200);
+			
+			// setInterval(arg1, 3000) // 계속 반복
+			setInterval(function(){
+				$("img").first().appendTo("body");
+			}, 1500); // 3초 간격으로 function 함수를 수행
+			
+		});
+	</script>
+	
+</body>
+</html>

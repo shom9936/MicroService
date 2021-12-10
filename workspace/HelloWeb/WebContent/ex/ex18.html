@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+        <h1>점점 커지는 마법</h1>
+  <div>
+          <img src="image/dog1.jpg" id=dog />
+  </div>        
+
+<script>
+        $(function(){
+                $("img").attr("width",100).attr("height",70);
+                /* 이미지 태그, attribute() .은 chain으로 그 다음에 하는것은 */
+                
+                setInterval(function() {
+                        $("#dog").animate({width:"+=30"},1000).animate({height:"+=20"},500);
+                },2000);  //2초간걱
+        }); //$function()-end
+
+</script>
+
+</body>
+</html>

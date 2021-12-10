@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	*{
+		font-family: "맑은 고딕";
+	}
+	
+	.list{
+		border-collapse: collapse;
+		text-align: center;
+		width : 700px;
+		font-size: 8pt;
+		margin-bottom: 10px;
+	}
+	
+	.list th{
+		background-color: #bcbcbc;
+		border-top: 1px solid #999999;
+		border-bottom: 1px solid #999999;
+		font-weight: bold;
+		
+	}
+	
+	.list td {
+		border-bottom: 1px solid #999999;
+	}
+	
+	.list td, th {
+		padding: 7px;
+	}
+	
+	.no{
+		width : 100px;
+	}
+	
+	.title{
+		width : 400px;
+	}
+	
+	.name{
+		width : 100px;
+	}
+	
+	.logdate{
+		width : 100px;
+	}
+	
+	.hit{
+		width : 50px;
+	}
+	
+	.recomment {
+		width : 50px;
+	}
+	
+	.list_write{
+		background-color: #2986cc;
+		border : none;
+		border-radius: 5px;
+		box-shadow : none;
+		color : white;
+		font-size: 8px;
+		font-weight : bold;
+		padding: 6px 15px;
+	}
+	
+
+}
+</style>
+</head>
+<body>
+	<table class = "list">
+		<thead>
+			<tr>
+				<th class="no"> No. </th>
+				<th class="title">제목</th>
+				<th class="name">글쓴이</th>
+				<th class="logdate">작성일</th>
+				<th class="hit">조회</th>
+				<th class="recomment">추천</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td >1</td>
+				<td >그웬 너프좀...</td>
+				<td >개구리</td>
+				<td >2021.10.05</td>
+				<td >36</td>
+				<td >5</td>
+			</tr>
+			<tr>
+				<td class="no">2</td>
+				<td class="title">아크샨 너프좀...</td>
+				<td class="name">개구리</td>
+				<td class="logdate">2021.10.05</td>
+				<td class="hit">36</td>
+				<td class="recomment">5</td>
+			</tr>
+			<tr>
+				<td class="no">3</td>
+				<td class="title">볼베 너프좀...</td>
+				<td class="name">개구리</td>
+				<td class="logdate">2021.10.05</td>
+				<td class="hit">36</td>
+				<td class="recomment">5</td>
+			</tr>
+		</tbody>
+	</table>
+	<div style="text-align: right;">
+		<button class="list_write" type="button"> 글쓰기 </button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+127.0.0.1 - - [30/Nov/2021:23:25:11 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:23:25:12 +0900] "GET /X_practice01/test01/ajax1.html HTTP/1.1" 200 1037
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:23:25:15 +0900] "GET /X_practice01/ajaxTest1?param=Hello+jquery HTTP/1.1" 200 33

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+	*{
+		font-family: "맑은 고딕";
+	}
+	
+	.write{
+		border-collapse: collapse;
+	}
+
+	.write th{
+		background-color: #bcbcbc;
+		width : 50px;
+	}
+	
+	.blank{
+		border : none;
+		background-color: transparent;
+		padding: 10px;
+	}
+	
+	.write thead{
+		border: 1px solid #bcbcbc;
+		padding: 0;
+	}
+	
+	.thead input{
+		width : 98%;
+		height : 100%;
+		border: none;
+	}
+	
+	.write_tbody, .write_tfoot{
+		border: 1px solid #bcbcbc;
+	}
+	
+	.write_tbody textarea{
+		border: none;
+	}
+	
+	.complite{
+		background-color: #2986cc;
+		border : none;
+		border-radius: 5px;
+		box-shadow : none;
+		color : white;
+		font-size: 12px;
+		font-weight : bold;
+		height : 30px;
+		width : 90px;
+	}
+	
+</style>
+</head>
+<body>
+		<table class="write">
+			<thead class="thead">
+				<tr>
+					<th> 제목 </th>
+					<td> <input type="text" name="title"> </td>
+				</tr>
+			</thead>
+			<tr>
+				<td class="blank" colspan="2"></td>
+			</tr>
+			<tbody class="write_tbody">
+				<tr>
+					<th> 내용 </th>
+					<td>
+						<textarea rows="20" cols="62" name="content" placeholder="내용을 입력해주세요"> </textarea>
+					</td>
+				</tr>
+			</tbody>
+			<tr>
+				<td class="blank" colspan="2"></td>
+			</tr>
+			<tr class="write_tfoot">
+				<th> 파일 </th>
+				<td><input type="file" name="photo"> </td>
+			</tr>
+			<tr>
+				<td class="blank" colspan="2"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <input type="button" value="완료" class = "complite" onclick="checkWrite(this.form);"> </td>
+			</tr>
+		</table>
+</body>
+</html>

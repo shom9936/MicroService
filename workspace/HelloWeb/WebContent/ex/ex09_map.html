@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cf4802799d198d87eddef043e02c9e4b"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		var mapCenter = new daum.maps.LatLng(37.570985, 126.992504 );
+		
+		var mapDesign = {
+				zoom : 15, 
+				center : mapCenter,
+				mapTypeId : daum.maps.MapTypeId.ROADMAP
+				// mapTypeId : daum.maps.MapTypeId.HYBRID
+		};
+		
+		var map = new daum.maps.Map(document.getElementById("showMap"), mapDesign);1
+	}
+</script>
+</head>
+<body>
+	<div id="showMap" style="width: 700px; height: 700px">
+		지도
+	</div>
+</body>
+</html>

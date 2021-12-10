@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var friend = {
+			// friend는 객체 
+			eye : "sexy" , 
+			attitude : "kind",
+			eatting : function(){
+				alert("먹는 속도 빠름")
+			}
+	};
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+		alert(friend.eye + ", "+ friend.attitude);
+		friend.eatting();
+	</script>
+	
+	<script type="text/javascript">
+		var lunch = {main:"빵", drink:"우유"};
+		var str1 = JSON.stringify(lunch);
+		document.write(str1+ "<br>");
+	</script>
+	
+	<script type="text/javascript">
+		// 문자열 to 객체
+		var lunch2 = '{"main":"빵", "drink":"우유"}';
+		var jasobject = JSON.parse(lunch2);
+		document.write(jasobject.main + " " + jasobject.drink + "<br>");
+	</script>
+	
+	<script type="text/javascript">
+		var date = new Date();
+		var str2 = date.toJSON();
+		document.write(str2 + "<br>");
+	</script>
+	
+</body>
+</html>

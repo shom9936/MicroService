@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.shopInfo{
+	padding : 5px;
+}
+
+.shopInfo td{
+	padding : 15px;
+	text-align: left;
+}
+
+.shop{
+	border: 1px #ccc solid;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.review{
+	text-align: left;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.reviewEach{
+	margin-bottom: 3px;
+	border-bottom : 1px solid #ccc;
+	padding : 3px;
+}
+
+.reviewEach img{
+	width : 50px;
+	height: 10px;
+	
+}
+
+.writeReview{
+	height: 55px;
+}

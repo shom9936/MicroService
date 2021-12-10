@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+   
+	<bean name="securityBean" class="helloProcess.Security"/>
+	
+	<bean name="helloProcessBean" class="helloProcess.HelloProcess"/>
+	
+	<aop:config> <!-- bean과 별도로 aop 구성 -->
+		<aop:aspect id="securityAspect" ref="securityBean">
+			<aop:pointcut expression="within(helloProcess.HelloProcess)" id="secuPoint"/>
+					<!-- 공통이 적용된 부분 -->
+			<aop:before  pointcut-ref="secuPoint" method="goSecurity"/>
+					<!-- pointcut으로 지정한 부분이 실행되기 전 goSecurity가 가동됨 -->
+					<!-- 즉, HelloProcess의 kajaDrive() 메소드가 가동되기 전(before) 보안처리함 -->
+			<aop:after  pointcut-ref="secuPoint" method="goSecurity2"/>
+		</aop:aspect>
+	</aop:config>
+</beans>
+
+
+
